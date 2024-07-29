@@ -19,7 +19,7 @@ function Notes(){
         // To prevent an empty screen in first time.
         utils.addToLocalStorage(types.NOTES_DATA,notesData);
         setNotesColl(notesData);
-    }, [])
+    }, [data])
     return(
         <section className={styles.container}>
             <Greeting/>
